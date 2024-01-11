@@ -1,0 +1,845 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 65%;
+}
+
+body{
+    font-family: 'Jost', sans-serif;
+    color: white;
+    background-color: rgb(5, 8, 87);
+    overflow-x: hidden;
+}
+
+
+a{
+    color: rgb(241, 231, 231);
+    text-decoration: none;
+}
+
+.row{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1190px){
+    .row{
+        padding: 0 10rem;
+    }
+}
+
+@media (max-width: 860px){
+    .row{
+        padding: 0 9rem;
+    }
+}
+
+@media (min-width: 1190px){
+    .row{
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 635px){
+    .row{
+        padding:0 2rem;
+    }
+}
+
+h1,
+h2{
+    font-weight: 400;
+}
+
+h2{
+    font-size: 4.5rem;
+}
+
+h2::before{
+    content: "";
+    display: block;
+    height: 0.3rem;
+    width: 20rem;
+    background-color: rgb(0, 123, 255);
+}
+
+h2::after{
+    content: "";
+    display: block;
+    height: 0.3rem;
+    width: 10rem;
+    background-color: rgb(0, 123, 255);
+    margin-top: 1rem;
+}
+
+@media (max-width: 635px){
+    h2{
+        font-size: 3.5rem;
+    }
+}
+
+h3{
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+
+
+header {
+    flex-direction: column;
+    height: 100vh;
+    background-image:  /* To add some darkness on top of the page*/
+    linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)),url('photos/33.jpeg');
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header .row{
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: flex-end; /* To align the categories to the left*/
+    gap: 6rem; /* The gap between the categories*/
+    align-items: center;
+    height: 9rem;
+}
+
+nav a{
+    font-size: 2.2rem;
+    position: relative;
+    overflow-x: hidden;
+    padding-bottom: 1rem;
+    transition: all 0.3s cubic-bezier(1,0.68,0.16,0.9);
+}
+
+nav a::after{
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 100%;
+    width: 100%;
+    height: 1rem;
+    background: rgb(0, 123, 255);
+    transition: all 0.3s cubic-bezier(1,0.68,0.16,0.9);
+}
+
+nav a:hover{
+    color: rgb(0, 123, 255);
+}
+
+nav a:hover::after{
+    right: 0;
+    height: 2px;
+}
+
+@media (max-width: 860px){
+    a{
+        display: none;
+    }
+}
+
+
+.header-text-container{
+    display: flex;
+    align-items: center;
+    height: calc(100% - 18rem);
+}
+
+.header-text-container p{
+    font-size: 2.4rem;
+    margin: 1rem 0 3rem; /*10 px on the top and 30 on the bottom*/
+}
+
+@media (max-width: 635px){
+    .header-text-container p{
+        font-size: 1.4rem;
+    }
+    .header-text-container h1{
+        font-size: 3.8rem;
+    }
+}
+h1{
+    font-size: 7.5rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1.2rem 4rem;
+    border: 2px solid rgb(0, 123, 255);
+    font-size: 2.2rem;
+    transition: 0.2s;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+ }
+
+.btn::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 123, 255);
+    z-index: -1;
+}
+
+.btn:hover::after{
+    right: 0;
+    transition: all 0.3s cubic-bezier(1,0.68,0.16,0.9);
+}
+
+.btn:hover,
+.btn:focus{
+    transform: scale(1.1);
+}
+
+
+/*---------------------------------------*/
+/*---------About Me Section*/
+/*---------------------------------------*/
+
+.aboutme-box img{
+    height: 50rem;
+    margin-top: 5rem;
+    margin-left: 35rem;
+}
+
+.aboutme-box ul{
+    margin-left: 2rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 1190px){
+    .aboutme-box img{
+        margin-left: 16rem;
+        height: 40rem;
+    }
+}
+
+@media (max-width: 880px){
+    .aboutme-box img{
+        margin-left: 0rem;
+    }
+}
+@media (max-width: 635px){
+    .aboutme-box ul{
+        font-size: 1.5rem;
+    }
+}
+
+/*---------------------------------------*/
+/*---------Skills*/
+/*---------------------------------------*/
+
+.lang-prog-box{
+    display: flex;
+    gap: 46rem;
+    margin-top: 5rem;
+}
+
+
+.lang-box ul{
+    margin-top: 2rem;
+    font-size: 2.2rem;
+    margin-left: 2rem;
+   
+}
+.lang-box1 {
+    margin-left: 2rem;
+}
+@media (max-width: 635px){
+    .lang-box ul{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 1190px){
+    .lang-prog-box{
+        display: block;
+    }
+}
+
+p1, p4{
+    display: block;
+}
+
+p4{
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.TFD-WD-box{
+    display: flex;
+    gap: 23rem;
+}
+
+.software-box{
+    margin-top: 2rem;
+}
+
+@media (max-width: 1190px){
+    .TFD-WD-box{
+        display: block;
+    }
+}
+
+@media (max-width: 635px){
+    .TFD-WD-box{
+        margin-top: -4rem;
+    }
+}
+
+
+h6{
+    font-size: 3.2rem;
+    margin-top: -3rem;
+}
+
+@media (max-width: 1190px){
+    h6{
+        margin-top: 2rem;
+    }
+}
+@media (max-width: 635px){
+    h6{
+        font-size: 2.5rem;
+    }
+}
+
+.hover-box {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(5, 8, 87);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none; /* To allow clicks through the box */
+}
+/*--------------CSS--------------------*/
+.CSSimg img{
+    height: 12rem;
+}
+.CSSimg, .HTMLimg, .VScodeimg, .githubimg, .Cimg, .pythonimg, 
+.microsoftimg, .googleimg, .adobeimg, .hubspotimg{
+    display: flex;
+    transition: 0.2s;
+    
+}
+.CSSimg:hover, .CSSimg:focus, .HTMLimg:hover, .HTMLimg:focus,
+ .VScodeimg:hover, .VScodeimg:focus, .githubimg:hover, .githubimg:focus, .Cimg:hover, .Cimg:focus
+ , .pythonimg:hover, .pythonimg:focus , .microsoftimg:hover, .microsoftimg:focus , .googleimg:hover, .googleimg:focus
+ , .adobeimg:hover, .adobeimg:focus  , .hubspotimg:hover, .hubspotimg:focus{
+    transform: scale(1.1);
+}
+
+.CSSimg{
+    position: relative;
+    display: inline-block;
+  }
+
+  .CSSimg .hover-box{
+    top: 85%;
+    left: 50%;
+    width: 4.5rem;
+   }
+
+  .CSSimg:hover .hover-box {
+    opacity: 1;
+  }
+
+
+  /*--------------HTML--------------------*/
+  .HTMLimg img{
+    height: 10.7rem;
+    margin-bottom: 0.5rem;
+}
+  .HTMLimg{
+    position: relative;
+    display: inline-block;
+  }
+  .HTMLimg .hover-box{
+    top: 85%;
+    left: 50%;
+    width: 5rem;
+   }
+  .HTMLimg:hover .hover-box {
+    opacity: 1;
+  }
+
+  .HTMLimg p3, .CSSimg p3{
+    font-size: 1.2rem;
+  }
+
+   /*--------------VS Code--------------------*/
+   .VScodeimg img{
+    height: 10rem;
+   }
+   .VScodeimg{
+    position: relative;
+    display: inline-block;
+   }
+   .VScodeimg .hover-box{
+        top: 85%;
+        width: 7.5rem;
+    }
+    .VScodeimg p3{
+        font-size: 1.2rem;
+    }
+
+  .VScodeimg:hover .hover-box {
+    opacity: 1;
+  }
+
+  /*--------------Github--------------------*/
+  .githubimg img{
+    height: 10rem;
+    margin-left: 5rem;
+  }
+  .githubimg{
+    position: relative;
+    display: inline-block;
+  }
+
+  .githubimg .hover-box{
+    top: 85%;
+    left: 68%;
+    width: 7.5rem;
+   }
+  .githubimg:hover .hover-box {
+    opacity: 1;
+  }
+
+  .githubimg p3{
+    font-size: 1.3rem;
+  }
+  /*--------------C++--------------------*/
+  .Cimg img{
+    height: 12rem;
+    margin-bottom: 4rem;
+  }
+  .Cimg{
+    position: relative;
+    display: inline-block;
+  }
+  .Cimg p3{
+    font-size: 1.5rem;
+  }
+  .Cimg .hover-box,.pythonimg .hover-box {
+    top: 65%;
+  }
+
+  .Cimg:hover .hover-box {
+    opacity: 1;
+  }
+  
+
+  /*--------------python--------------------*/
+  .pythonimg p3{
+    font-size: 1.2rem;
+  }
+.pythonimg img{
+    height: 16rem; 
+    margin-bottom: 1.5rem;
+}
+  .pythonimg{
+    position: relative;
+    display: inline-block;
+  }
+
+  .pythonimg:hover .hover-box {
+    opacity: 1;
+  }
+
+  /*--------------adobe--------------------*/
+  .adobeimg img{
+    height: 14rem;
+    margin-bottom: 1.5rem;
+  }
+  .adobeimg{
+    position: relative;
+    display: inline-block;
+  }
+
+  .adobeimg .hover-box{
+    top: 70%;
+    width: 11rem;
+  }
+
+  .adobeimg:hover .hover-box {
+    opacity: 1;
+  }
+
+  .adobeimg p3{
+    font-size: 1.2rem;
+  }
+
+  /*--------------google--------------------*/
+  .googleimg img{
+    height: 8rem;
+    margin-bottom: 5rem;
+  }
+  .googleimg{
+    position: relative;
+    display: inline-block;
+  }
+
+  .googleimg .hover-box{
+    width: 10rem;
+  }
+  .googleimg:hover .hover-box {
+    opacity: 1;
+  }
+  .googleimg p3{
+    font-size: 1.2rem;
+  }
+
+  /*--------------microsoft--------------------*/
+  .microsoftimg img{
+    height: 14rem;
+    margin-bottom: 2rem;
+    margin-left: -2rem;
+  }
+  .microsoftimg{
+    position: relative;
+    display: inline-block;
+  }
+
+  .microsoftimg .hover-box{
+    left: 44%;
+    top: 68%;
+  }
+  .microsoftimg:hover .hover-box {
+    opacity: 1;
+  }
+
+  .microsoftimg p3{
+    font-size: 1.3rem;
+  }
+
+    /*--------------HubSpot--------------------*/
+    .hubspotimg img{
+        height: 4rem;
+        margin-bottom: 6rem;
+    }
+    .hubspotimg{
+        position: relative;
+        display: inline-block;
+    }
+    .hubspotimg .hover-box{
+       top: 56%;
+       left: 60%;
+       width: 11rem;
+    }
+    
+    .hubspotimg:hover .hover-box {
+       opacity: 1;
+    }
+    .hubspotimg p3{
+        font-size: 1.2rem;
+    }
+
+/*---------------------------------------*/
+/*---------Projects Section*/
+/*---------------------------------------*/
+
+.projects-box h3{
+    text-align: center;
+    margin-top: 5rem;
+}
+.projects-box {
+    display: flex;
+    height: 30rem;
+    gap: 10rem;
+    margin-left: 15rem;
+    margin-top: 1.5rem;
+}
+
+.projects-box1 ul, .projects-box2 ul, .projects-box3 ul{
+    margin-left: 1rem;
+}
+
+.projects-box1 p{
+    font-size: 2.5rem;
+    margin-left: 45.5rem;
+    margin-top: 3rem;
+    color: rgb(0, 123, 255);
+}
+
+.projects-box2 img{
+    height: 42rem;
+    margin-left: 34rem;
+    margin-top: 3rem;
+}
+
+.projects-box2 p{
+    font-size: 2.5rem;
+    margin-left: 45.5rem;
+    margin-top: 3rem;
+    color: rgb(0, 123, 255);
+}
+
+.projects-box3 img{
+    height: 18rem;
+    margin-left: 20rem;
+    margin-top: 3rem;
+}
+
+.projects-box3 p{
+    font-size: 2.5rem;
+    margin-left: 45.5rem;
+    margin-top: 3rem;
+    color: rgb(0, 123, 255);
+}
+
+h4{
+    margin-left: 42rem;
+    font-size: 4.2rem;
+    margin-top: 4rem;
+}
+
+@media (max-width: 1190px){
+    h4{
+        margin-left: 20rem;
+        font-size: 3.8rem;
+        margin-bottom: -2rem;
+    }
+}
+
+
+
+h5{
+    margin-left: 28rem;
+    font-size: 4.2rem;
+    margin-top: 6rem;
+}
+
+@media (max-width:1190px){
+    h5{
+        margin-left: 11rem;
+        font-size: 3.2rem;
+    }
+}
+
+.mp-box {
+    display: flex;
+    gap: 16rem;
+    margin-top: 2rem;
+}
+
+p2{
+    font-size: 2.5rem;
+    color: rgb(0, 123, 255);
+}
+
+.mp-box1{
+    display: flex;
+    gap: 20rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 1190px){
+    .projects-box{
+        margin-left: 4rem;
+        gap: 5rem;
+    }
+    .projects-box img{
+        height: 22rem;
+        margin-top: 3rem;
+    }
+    .projects-box1 p, .projects-box2 p, .projects-box3 p{
+        margin-left: 23.5rem;
+        margin-top: .5rem;
+    }
+    .projects-box2 img{
+        height: 38rem;
+        margin-left: 14rem;
+    }
+    .projects-box3 img{
+        height: 12rem;
+        margin-left: 8rem;
+    }
+
+    .mp-box, .mp-box1{
+        display: block;
+    }
+
+    .mp-box ul, .mp-box1 ul{
+        margin-left: 1rem;
+    }
+}
+@media (max-width: 880px){
+    .projects-box{
+        margin-left: 0rem;
+        gap: 1rem
+    }
+    .projects-box1 p, .projects-box2 p, .projects-box3 p{
+        margin-left: 1rem;
+        margin-top: .5rem;
+    }
+    .projects-box2 img{
+        height: 38rem;
+        margin-left: 0rem;
+    }
+    .projects-box3 img{
+        height: 12rem;
+        margin-left: 0rem;
+    }
+}
+
+@media (max-width: 680px){
+    .projects-box, .projects-box2 img, .projects-box3 img{
+        display: none;
+    }
+    h4{
+        margin-left: 0rem;
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+    h5{
+        margin-left: 0rem;
+        font-size: 2.7rem;
+    }
+}
+@media (max-width: 635px){
+    h4{
+        font-size: 2.8rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    h5{
+        font-size: 2.4rem;
+        margin-top: 2rem;
+    }
+    .projects-box1 p, .projects-box2 p, .projects-box3 p{
+        font-size: 2rem;
+    }
+    .projects-box1 li, .projects-box2 li, .projects-box3 li{
+        margin-top: 0.6rem;
+        font-size: 1.6rem;
+        margin-left: 1.1rem;
+    }
+    .mp-box p2, .mp-box1 p2{
+        font-size: 2rem;
+    }
+    .mp-box li, .mp-box1 li{
+        margin-top: 0.6rem;
+        font-size: 1.6rem;
+        margin-left: 1.1rem;
+    }
+}
+
+/*---------------------------------------*/
+/*---------My Work Section*/
+/*---------------------------------------*/
+section{
+   padding: 8rem 0;
+}
+
+.work-box{
+   display: flex;
+   gap: 27rem;
+   margin-top: 3rem;
+}
+ 
+.work-box p{
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    color: rgb(0, 123, 255);
+}
+
+p1{
+    color: rgb(0, 123, 255);
+}
+
+p1, ul{
+   font-size: 1.8rem;
+} 
+
+.work-box1{
+   display: flex;
+   gap: 10rem;
+   margin-top: 5rem;
+}
+
+.work-box1 p{
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    color: rgb(0, 123, 255);
+}
+
+@media (max-width: 1190px){
+    .work-box, .work-box1{
+        display: block;
+    }
+}
+@media (max-width: 635px){
+    .work-box h3{
+        font-size: 2.2rem;
+    }
+    .work-box p{
+        font-size: 2rem;
+    }
+    .work-box p1{
+        font-size: 1.8rem;
+    }
+    .work-box li, .work-box1 li{
+        margin-top: 0.6rem;
+        font-size: 1.6rem;
+        margin-left: 1.7rem;
+    }
+    .work-box1 p1{
+        font-size: 1.8rem;
+    }
+    .work-box1 li{
+        margin-top: 0.6rem;
+        font-size: 1.6rem;
+        margin-left: 1.7rem;
+    }
+}
+
+
+/*---------------------------------------*/
+/*---------Back to Top*/
+/*---------------------------------------*/
+
+.back-to-top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: rgb(0, 123, 255);
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.3s;
+}
+
+.back-to-top.shown{
+    visibility: visible;
+    transform: none;
+    opacity: 1;
+}
+.back-to-top img{
+    height: 35px;
+}
+

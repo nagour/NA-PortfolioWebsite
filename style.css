@@ -269,11 +269,17 @@ h1{
     .lang-box ul{
         font-size: 1.8rem;
     }
+    .lang-box1{
+        margin-left: .2rem;
+    }
 }
 
 @media (max-width: 1190px){
     .lang-prog-box{
         display: block;
+    }
+    .lang-box1{
+        margin-left: .2rem;
     }
 }
 

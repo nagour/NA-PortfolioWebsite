@@ -93,7 +93,7 @@ header {
     flex-direction: column;
     height: 100vh;
     background-image:  /* To add some darkness on top of the page*/
-    linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)),url('photos/33.jpeg');
+    linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)),url('photos/photography-of-green-forest-during-day-time-wallpaper-preview.jpg');
     overflow-x: hidden;
     background-size: cover;
     background-position: center;

@@ -63,8 +63,8 @@
     <!--Skills-->
   
     <section id="skills" class="skills">
+        <h2 class="heading">Skills</h2>
         <div class="row">
-            <h2 class="heading">Skills</h2>
             <div class="lang-prog-box">
                 <div class="lang-box">
                     <h6>Languages</h6>
@@ -160,45 +160,51 @@
 
         <div class="projects-container">
             <div class="projects-box">
-                <img src="photos/P1.png" alt="">
-                <div class="projects-layer">
-                    <h4>Resize Images</h4>
-                    <p>Optimized memory efficiency through strategic pointer usage by developing a smart seam-carving
-                        program that dynamically resizes images using mathematical algorithms.</p>
+                <div class="projects-item">
+                    <img src="photos/P1.png" alt="">
+                    <div class="projects-layer">
+                        <h4>Resize Images</h4>
+                        <ul>
+                            <li>Optimized memory efficiency through strategic pointer usage by developing a smart seam-carving
+                            program that dynamically resizes images using mathematical algorithms.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="projects-item">
+                    <img src="photos/P2.png" alt="">
+                    <div class="projects-layer">
+                        <h4>Euchre Game</h4>
+                        <ul>
+                            <li>Designed a C++ interface that allows users to play a game of euchre with simulated players executing moves via a programmed strategy through object-oriented programming.</li>
+                            <li>Devised and implemented a robot opponent with intelligent strategies to compete either with other bots or with human players.</li>
+                            <li>Utilized polymorphism and abstraction concepts to design the application partitioning the code into a card class, a deck class, a player class, and a euchre game class.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
             <div class="projects-box">
-                <img src="photos/P2.png" alt="">
-                <div class="projects-layer">
-                    <h4>Euchre Game</h4>
-                    <ul>
-                        <li>Designed a C++ interface that allows users to play a game of euchre with simulated players executing moves via a programmed strategy through object-oriented programming.</li>
-                        <li>Devised and implemented a robot opponent with intelligent strategies to compete either with other bots or with human players.</li>
-                        <li>Utilized polymorphism and abstraction concepts to design the application partitioning the code into a card class, a deck class, a player class, and a euchre game class.</li>
-                    </ul>
+                <div class="projects-item">
+                    <img src="photos/P3.png" alt="">
+                    <div class="projects-layer">
+                        <h4>Web Backend</h4>
+                        <ul>
+                            <li>Created a queue that contains items stored in first-in-first-out order: the first item to be added is also the first one to be removed.</li>
+                            <li>Implemented this queue using a linked list that allowed insertion and removal at both ends, allowing items to be added at one end and removed at the other.</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <div class="projects-box">
-                <img src="photos/P3.png" alt="">
-                <div class="projects-layer">
-                    <h4>Web Backend</h4>
-                    <ul>
-                        <li>Created a queue that contains items stored in first-in-first-out order: the first item to be added is also the first one to be removed.</li>
-                        <li>Implemented this queue using a linked list that allowed insertion and removal at both ends, allowing items to be added at one end and removed at the other.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="projects-box">
-                <img src="photos/P4.png" alt="">
-                <div class="projects-layer">
-                    <h4>Piazza Classifier</h4>
-                    <ul>
-                        <li>Implemented a binary search tree and utilized the map abstract data type to construct a data container.</li>
-                        <li>Developed a program that employs this container to identify new posts and display any pertinent posts associated with them.</li>
-                    </ul>
+                <div class="projects-item">
+                    <img src="photos/P4.png" alt="">
+                    <div class="projects-layer">
+                        <h4>Piazza Classifier</h4>
+                        <ul>
+                            <li>Implemented a binary search tree and utilized the map abstract data type to construct a data container.</li>
+                            <li>Developed a program that employs this container to identify new posts and display any pertinent posts associated with them.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             
@@ -207,120 +213,133 @@
 
     <!--Personal Projects-->
     <section class="personal-projects" id="personal-projects">
-        <h2 class="heading">Personal <span>Projects</span></h2>
-        <div class="mp-box">
-            <div>
-                <p2>The ATM Validator</p2>
-                <ul>
-                    <li>Designed a program to print checking account balance, transaction type code: (W)ithdraw, (D)eposit, and (R)eport, and transaction amount of a customer account.</li>
-                    <li>Calculated new balance depending on the transaction type that was selected using designed function and printed to a protected file.</li>
-                </ul>
-            </div>     
-            <div>
-                <p2>Words Finder Game</p2>
-                <ul>
-                    <li>Created a program that reads an eight-by-eight table of letters, fills into a 2-dim array of size eight by eight, the
-                        correct words that need to be found, and finds the correct English words in the table.</li>
-                </ul>
-            </div>
-        </div>
+        <div class="row">
+            <h2 class="heading">Personal <span>Projects</span></h2>
+            <div class="mp-box">
+                <div class="mp-item">
+                    <div>
+                        <p2>The ATM Validator</p2>
+                        <ul>
+                            <li>Designed a program to print checking account balance, transaction type code: (W)ithdraw, (D)eposit, and (R)eport, and transaction amount of a customer account.</li>
+                            <li>Calculated new balance depending on the transaction type that was selected using designed function and printed to a protected file.</li>
+                        </ul>
+                    </div> 
+                </div>
+            
+                <div class="mp-item"> 
+                    <div>
+                        <p2>Words Finder Game</p2>
+                        <ul>
+                            <li>Created a program that reads an eight-by-eight table of letters, fills into a 2-dim array of size eight by eight, the
+                                correct words that need to be found, and finds the correct English words in the table.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
 
-        <div class="mp-box1">
-            <div>
-                <p2>Spelling Correction System </p2>
-                <ul>
-                    <li>Designed a program that reads words from a file and detects four types of errors: Character substitution,
-                        transposition, deletion, and insertion. Then, prints out all the incorrect words with the errors detected.</li>
-                </ul>
-            </div>     
-            <div>
-                <p2>Videos and Customers Information</p2>
-                <ul>
-                    <li>Displayed a menu that includes printing a list of all videos' names owned by the Movie Rent Video Store, a list of
-                        all customers, a list of rental information by a video title including the customer information. Depending on the
-                        users input, the program prints the needed information.</li>
-                </ul>
-            </div>
+            <div class="mp-box">
+                <div class="mp-item">
+                    <div>
+                        <p2>Spelling Correction System </p2>
+                        <ul>
+                            <li>Designed a program that reads words from a file and detects four types of errors: Character substitution,
+                                transposition, deletion, and insertion. Then, prints out all the incorrect words with the errors detected.</li>
+                        </ul>
+                    </div>
+                </div>
+              
+                <div class="mp-item">  
+                    <div>
+                        <p2>Videos and Customers Information</p2>
+                        <ul>
+                            <li>Displayed a menu that includes printing a list of all videos' names owned by the Movie Rent Video Store, a list of
+                                all customers, a list of rental information by a video title including the customer information. Depending on the
+                                users input, the program prints the needed information.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
         </div>
     </section>
 
 
   <!--My work-->
-  <section id="professional" class="professional">
-    <div class="row">
-        <h2 class="heading">
-            Professional <span>Experience</span>
-        </h2>
-        <div class="timeline-items">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">July 2023 - Current</div>
-                    <div class="timeline-content">
-                        <h3>Substitute Teacher/ Paraprofessional</h3>
-                        <p>Central Academy, Ann Arbor</p>
-                        <ul>
-                            <li>Empowered children to develop problem-solving skills and bring their ideas to life by designing and
-                                teaching engaging coding lessons with hands-on projects.</li>
-                            <li>Fostered an inclusive, positive learning environment by tailoring lesson plans to diverse student needs and
-                                collaborating with staff.</li>                                   
-                        </ul>
-                    </div>
+    <section id="professional" class="professional">
+        <div class="row">
+            <h2 class="heading">
+                Professional <span>Experience</span>
+            </h2>
+            <div class="timeline-items">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                        <div class="timeline-date">July 2023 - Current</div>
+                        <div class="timeline-content">
+                            <h3><strong>Substitute Teacher/ Paraprofessional</strong></h3>
+                            <p><strong>Central Academy, Ann Arbor</strong></p>
+                            <ul>
+                                <li>Empowered children to develop problem-solving skills and bring their ideas to life by designing and
+                                    teaching engaging coding lessons with hands-on projects.</li>
+                                <li>Fostered an inclusive, positive learning environment by tailoring lesson plans to diverse student needs and
+                                    collaborating with staff.</li>                                   
+                            </ul>
+                        </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                        <div class="timeline-date">May 2024 - Current</div>
+                        <div class="timeline-content">
+                            <h3><strong>Project Coordinator</strong></h3>
+                            <p><strong>University of Michigan, Ann Arbor</strong></p>
+                            <ul>
+                                <li>Coordinated logistical components of Engineering OnRamp, supporting high school students' engagement in
+                                    college life through 10 STEM programs.</li>
+                                <li>Utilized Google Workspace to organize documents and schedules, enhancing digital organization and
+                                    streamlining collaboration across cross-functional teams during key program transitions.</li>
+                                <li>Guided Program, Student Life and Residential Advisors on strategies to enhance student engagement and support.</li>                                   
+                            </ul>
+                        </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                        <div class="timeline-date">June 2023 - May 2024</div>
+                        <div class="timeline-content">
+                            <h3><strong>Project Advisor</strong></h3>
+                            <p><strong>University of Michigan, Ann Arbor</strong></p>
+                            <ul>
+                                <li>Supported 10 instructors in developing lesson plans and delivering in-class activities on data development and
+                                    coding, enhancing students' technical skills.</li>
+                                <li>Guided 80+ students in applying acquired knowledge to urban farming and food/environmental justice projects,
+                                    using an equity-centered engineering approach to foster community impact.</li>
+                                <li>Collaborated with faculty, staff, and administrators to ensure alignment with institutional goals and improve
+                                    program delivery.</li>
+                            </ul>
+
+                        </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                        <div class="timeline-date">June 2023 - August 2024</div>
+                        <div class="timeline-content">
+                            <h3><strong>Program Specialist</strong></h3>
+                            <p><strong>Inter-university Consortium for Political and Social Research, Ann Arbor</strong></p>
+                            <ul>
+                                <li>Assisted instructors with 50+ technical issues related to university systems and classroom technology
+                                    controllers, resolving tickets submitted via the Jira Service Management platform.</li>
+                                <li>Delivered search engine optimization recommendations to 50+ ICPSR staff members, enhancing website
+                                    visibility and user experience.</li>
+                                <li>Conducted usability testing on AI platforms, including ChatGPT and Google AI, collecting statistical data from
+                                    students to evaluate their effectiveness in data analysis and educational support.</li>
+                            </ul>
+                        </div>
+                </div>
             </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">May 2024 - Current</div>
-                    <div class="timeline-content">
-                        <h3>Project Coordinator</h3>
-                        <p>University of Michigan, Ann Arbor</p>
-                        <ul>
-                            <li>Coordinated logistical components of Engineering OnRamp, supporting high school students' engagement in
-                                college life through 10 STEM programs.</li>
-                            <li>Utilized Google Workspace to organize documents and schedules, enhancing digital organization and
-                                streamlining collaboration across cross-functional teams during key program transitions.</li>
-                            <li>Guided Program, Student Life and Residential Advisors on strategies to enhance student engagement and support.</li>                                   
-                        </ul>
-                    </div>
-                
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">June 2023 - May 2024</div>
-                    <div class="timeline-content">
-                        <h3>Project Advisor</h3>
-                        <p>University of Michigan, Ann Arbor</p>
-                        <ul>
-                            <li>Supported 10 instructors in developing lesson plans and delivering in-class activities on data development and
-                                coding, enhancing students' technical skills.</li>
-                            <li>Guided 80+ students in applying acquired knowledge to urban farming and food/environmental justice projects,
-                                using an equity-centered engineering approach to foster community impact.</li>
-                            <li>Collaborated with faculty, staff, and administrators to ensure alignment with institutional goals and improve
-                                program delivery.</li>
-                        </ul>
-
-                    </div>
-             
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">June 2023 - August 2024</div>
-                    <div class="timeline-content">
-                        <h3><strong>Program Specialist</strong></h3>
-                        <p><strong>Inter-university Consortium for Political and Social Research, Ann Arbor</strong></p>
-                        <ul>
-                            <li>Assisted instructors with 50+ technical issues related to university systems and classroom technology
-                                controllers, resolving tickets submitted via the Jira Service Management platform.</li>
-                            <li>Delivered search engine optimization recommendations to 50+ ICPSR staff members, enhancing website
-                                visibility and user experience.</li>
-                            <li>Conducted usability testing on AI platforms, including ChatGPT and Google AI, collecting statistical data from
-                                students to evaluate their effectiveness in data analysis and educational support.</li>
-                        </ul>
-
-                    </div>
-            </div>
+        </div>
     </section>
+    <a aria-label="Back to Top" class="back-to-top" href="#top">
+        <img src="photos/arrow-up-3-svgrepo-com.svg" alt="Arrow Up" />
+    </a>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
 </body>

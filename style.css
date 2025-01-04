@@ -17,7 +17,6 @@ body{
 }
 
 
-
 .header{
     position: fixed;
     top: 0;
@@ -47,6 +46,7 @@ body{
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
+    margin-top: .5rem;
     transition: 0.3s;
     position: relative;
     overflow-x: hidden;
@@ -185,7 +185,9 @@ body{
     box-shadow: 0 0 20px rgb(234, 255, 0);
 }
 
-/*About section*/
+/*---------------------------------------*/
+/*---------About Me*/
+/*---------------------------------------*/
 .about {
     display: flex;
     justify-content: center;
@@ -216,9 +218,12 @@ body{
     color: rgb(234, 255, 0);
 }
 
-/*Skills*/
+/*---------------------------------------*/
+/*---------Skills*/
+/*---------------------------------------*/
 .skills{
     height: 100vh;
+    scroll-margin-top: 68px;
 }
 
 .lang-prog-box{
@@ -296,154 +301,154 @@ h6{
 }
 
 .CSSimg{
-    position: relative;
-    display: inline-block;
-  }
-
-  .CSSimg .hover-box{
-    top: 87%;
-    left: 50%;
-    width: 4rem;
-   }
-
-  .CSSimg:hover .hover-box {
-    opacity: 1;
-  }
-
-
-  /*--------------HTML--------------------*/
-  .HTMLimg img{
-    height: 6rem;
-    margin-bottom: 0.5rem;
+position: relative;
+display: inline-block;
 }
-  .HTMLimg{
-    position: relative;
-    display: inline-block;
-  }
-  .HTMLimg .hover-box{
-    top: 85%;
-    left: 55%;
-    width: 5rem;
-   }
-  .HTMLimg:hover .hover-box {
-    opacity: 1;
-  }
 
-  .HTMLimg p3, .CSSimg p3{
-    font-size: 1.2rem;
-  }
+.CSSimg .hover-box{
+top: 87%;
+left: 50%;
+width: 4rem;
+}
 
-   /*--------------VS Code--------------------*/
-   .VScodeimg img{
-        height: 6rem;
-        margin-top: -3rem;
-   }
-   .VScodeimg{
-        position: relative;
-        display: inline-block;
-   }
-   .VScodeimg .hover-box{
-        top: 85%;
-        width: 7.5rem;
-        margin-left: 1rem;
-    }
-    .VScodeimg p3{
-        font-size: 1.2rem;
-    }
+.CSSimg:hover .hover-box {
+opacity: 1;
+}
 
-  .VScodeimg:hover .hover-box {
-    opacity: 1;
-  }
 
-  /*--------------Github--------------------*/
-  .githubimg img{
+/*--------------HTML--------------------*/
+.HTMLimg img{
+height: 6rem;
+margin-bottom: 0.5rem;
+}
+.HTMLimg{
+position: relative;
+display: inline-block;
+}
+.HTMLimg .hover-box{
+top: 85%;
+left: 55%;
+width: 5rem;
+}
+.HTMLimg:hover .hover-box {
+opacity: 1;
+}
+
+.HTMLimg p3, .CSSimg p3{
+font-size: 1.2rem;
+}
+
+/*--------------VS Code--------------------*/
+.VScodeimg img{
     height: 6rem;
-    margin-left: 5rem;
-  }
-  .githubimg{
+    margin-top: -3rem;
+}
+.VScodeimg{
     position: relative;
     display: inline-block;
-  }
-
-  .githubimg .hover-box{
+}
+.VScodeimg .hover-box{
     top: 85%;
-    left: 68%;
     width: 7.5rem;
     margin-left: 1rem;
-   }
-  .githubimg:hover .hover-box {
-    opacity: 1;
-  }
-
-  .githubimg p3{
-    font-size: 1.3rem;
-  }
-  /*--------------C++--------------------*/
-  .Cimg img{
-    height: 7rem;
-    margin-bottom: 4rem;
-  }
-  .Cimg{
-    position: relative;
-    display: inline-block;
-  }
-  .Cimg p3{
-    font-size: 1.5rem;
-  }
-  .Cimg .hover-box {
-    top: 65%;
-    margin-top: -1rem;
-  }
-
-  .Cimg:hover .hover-box {
-    opacity: 1;
-  }
-  
-
-  /*--------------python--------------------*/
-  .pythonimg p3{
+}
+.VScodeimg p3{
     font-size: 1.2rem;
-  }
+}
+
+.VScodeimg:hover .hover-box {
+opacity: 1;
+}
+
+/*--------------Github--------------------*/
+.githubimg img{
+height: 6rem;
+margin-left: 5rem;
+}
+.githubimg{
+position: relative;
+display: inline-block;
+}
+
+.githubimg .hover-box{
+top: 85%;
+left: 68%;
+width: 7.5rem;
+margin-left: 1rem;
+}
+.githubimg:hover .hover-box {
+opacity: 1;
+}
+
+.githubimg p3{
+font-size: 1.3rem;
+}
+/*--------------C++--------------------*/
+.Cimg img{
+height: 7rem;
+margin-bottom: 4rem;
+}
+.Cimg{
+position: relative;
+display: inline-block;
+}
+.Cimg p3{
+font-size: 1.5rem;
+}
+.Cimg .hover-box {
+top: 65%;
+margin-top: -1rem;
+}
+
+.Cimg:hover .hover-box {
+opacity: 1;
+}
+
+
+/*--------------python--------------------*/
+.pythonimg p3{
+font-size: 1.2rem;
+}
 .pythonimg img{
     height: 11rem; 
     margin-bottom: 1.6rem;
     margin-left: -2rem;
 }
-  .pythonimg{
-    position: relative;
-    display: inline-block;
-  }
-  .pythonimg .hover-box {
-    top: 65%;
-    margin-top: -.5rem;
-    margin-left: -1rem;
-  }
-  .pythonimg:hover .hover-box {
-    opacity: 1;
-  }
+.pythonimg{
+position: relative;
+display: inline-block;
+}
+.pythonimg .hover-box {
+top: 65%;
+margin-top: -.5rem;
+margin-left: -1rem;
+}
+.pythonimg:hover .hover-box {
+opacity: 1;
+}
 
-  /*--------------adobe--------------------*/
-  .adobeimg img{
-    height: 8rem;
-    margin-bottom: 1.5rem;
-  }
-  .adobeimg{
-    position: relative;
-    display: inline-block;
-  }
+/*--------------adobe--------------------*/
+.adobeimg img{
+height: 8rem;
+margin-bottom: 1.5rem;
+}
+.adobeimg{
+position: relative;
+display: inline-block;
+}
 
-  .adobeimg .hover-box{
-    top: 70%;
-    width: 11rem;
-  }
+.adobeimg .hover-box{
+top: 70%;
+width: 11rem;
+}
 
-  .adobeimg:hover .hover-box {
-    opacity: 1;
-  }
+.adobeimg:hover .hover-box {
+opacity: 1;
+}
 
-  .adobeimg p3{
-    font-size: 1.2rem;
-  }
+.adobeimg p3{
+font-size: 1.2rem;
+}
 
   /*--------------google--------------------*/
   .googleimg img{
@@ -488,73 +493,79 @@ h6{
     font-size: 1.3rem;
   }
 
-    /*--------------HubSpot--------------------*/
-    .hubspotimg img{
-        height: 2rem;
-        margin-bottom: 6rem;
-    }
-    .hubspotimg{
-        position: relative;
-        display: inline-block;
-    }
-    .hubspotimg .hover-box{
-       top: 56%;
-       left: 60%;
-       width: 11rem;
-    }
-    
-    .hubspotimg:hover .hover-box {
-       opacity: 1;
-    }
-    .hubspotimg p3{
-        font-size: 1.2rem;
-    }
+/*--------------HubSpot--------------------*/
+.hubspotimg img{
+    height: 2rem;
+    margin-bottom: 6rem;
+}
+.hubspotimg{
+    position: relative;
+    display: inline-block;
+}
+.hubspotimg .hover-box{
+    top: 56%;
+    left: 60%;
+    width: 11rem;
+}
 
-    /*Projects*/
+.hubspotimg:hover .hover-box {
+    opacity: 1;
+}
+.hubspotimg p3{
+    font-size: 1.2rem;
+}
+
+/*---------------------------------------*/
+/*---------Academic Project*/
+/*---------------------------------------*/
 .projects {
-    height: 100vh;
+    height: 120vh;
     background: #323946;
+    scroll-margin-top: 70px;
 }
 
 .projects h2{
     margin-bottom: 4rem
 }
 
-.projects-container {
+.projects-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2.5rem;
 }
 
-.projects-container .projects-box {
+.projects-box .projects-item {
     position: relative;
     justify-content: center; 
     align-items: center;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     box-shadow: 0 0 1rem;
     overflow: hidden;
     display: flex;
-    width: 50%;
-    height: 100%;
-    margin-left: 26%;
+    margin: 1px 0 100px 50px;
 }
 
-.projects-layer ul li {
-    font-size: .5rem; /* Smaller font size for list items */
+.projects-layer ul {
+    font-size: .9rem;
     line-height: 1.5;  /* Improve readability */
 }
 
-.projects-box img {
-    width: 100%;
+.projects-box {
+    display: flex; /* Enables Flexbox */
+    gap: 5rem;
+}
+
+.projects-item img {
+    width: 80%;
     transition: .5s ease;
 }
 
-.projects-box:hover img {
+.projects-item:hover img {
     transform: scale(1.1);
 }
 
-.projects-box .projects-layer {
+.projects-item .projects-layer {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -571,46 +582,53 @@ h6{
     transition: .5s ease;
 }
 
-.projects-box:hover .projects-layer {
+.projects-item:hover .projects-layer {
     transform: translateY(0);
 }
 .projects-layer h4{
     font-size: 1.5rem;
 }
 
+/*---------------------------------------*/
+/*---------Personal Project*/
+/*---------------------------------------*/
 .personal-projects{
     height: 100vh;
+    scroll-margin-top: 68px;
 }
+
+.personal-projects h2{
+    margin-top: 5rem;
+}
+
 .mp-box {
-    display: flex;
-    gap: 10rem;
-    margin-top: 2rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    display: flex; /* Enables Flexbox */
+    justify-content: space-between; /* Adds space between the items */
+    gap: 20px;
 }
+
+.mp-item {
+    flex: 1; /* Makes the items evenly sized */
+    padding: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow */
+}
+
 
 p2{
     font-size: 2.5rem;
     color: rgb(234, 255, 0);
 }
 
-.mp-box1{
-    display: flex;
-    gap: 14rem;
-    margin-top: 2rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
-}
-
-
-/*work experience*/
+/*---------------------------------------*/
+/*---------Professional Experience*/
+/*---------------------------------------*/
 .professional {
     padding: 100px 15px;
     background: #323946;
 }
 
 .professional h2{
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .timeline-items {
@@ -665,8 +683,8 @@ p2{
     font-weight: 800;
     color: white;
     margin: 6px 0 15px;
-    align-items: right;
 }
+
 
 .timeline-content{
     background-color: #323946;
@@ -695,6 +713,35 @@ p2{
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
+}
+
+/*---------------------------------------*/
+/*---------Back to Top*/
+/*---------------------------------------*/
+.back-to-top{
+    position: fixed;
+    bottom: 20rem;
+    right: 233rem;
+    background: rgb(236, 237, 239);
+    height: 500rem;
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.3s;
+}
+
+.back-to-top.shown{
+    visibility: visible;
+    transform: none;
+    opacity: 1;
+}
+.back-to-top img{
+    height: 35px;
 }
 
 ::-webkit-scrollbar{

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Portfolio.</a>
+        <nav class="navbar">
+            <div class="off-screen-menu">
+                <a href="index.html" style="--i:1;">Home</a>
+                <a href="about.html" style="--i:2;">About Me</a>
+                <a href="skills.html" style="--i:3;" >Skills</a>
+                <a href="projects.html" style="--i:4;" class="active">Projects</a>
+                <a href="professional-experience.html" style="--i:6;" >Professional Experience</a>
+            </div>
+        </nav>
+        <nav>
+            <div class="ham-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </nav>
+    </header>
+    
+    
+    
+    <!-- Academic Projects -->
+    <section class="projects" id="projects">
+        <h2 class="heading">Academic <span>Projects</span></h2>
+        <div class="projects-container">
+            <div class="projects-image">
+                <img id="project-image" src="photos/P1.png" alt="">
+            </div>
+
+            <div class="projects-details" id="projects-details">
+                <div class="projects-item" data-project="1">
+                    <h4>Insta 485</h4>
+                    <ul>
+                        <li>Developed an Instagram clone with client-side/server-side dynamic pages using React API for front-end, Flask
+                            for back-end, and SQLite for database, supporting features like user sign-in, posts and comments.</li>
+                    </ul>
+                </div>
+
+                <div class="projects-item" data-project="2">
+                    <h4>Web Backend</h4>
+                    <ul>
+                        <li>Created a queue that contains items stored in first-in-first-out order: the first item to be added is also the first one to be removed.</li>
+                        <li>Implemented this queue using a linked list that allowed insertion and removal at both ends, allowing items to be added at one end and removed at the other.</li>
+                    </ul>
+                </div>
+
+                <div class="projects-item" data-project="3">
+                    <h4>Resize Images</h4>
+                    <ul>
+                        <li>Optimized memory efficiency through strategic pointer usage by developing a smart seam-carving program that dynamically resizes images using mathematical algorithms.</li>
+                    </ul>
+                </div>
+
+                <div class="projects-item" data-project="4">
+                    <h4>Euchre Game</h4>
+                    <ul>
+                        <li>Designed a C++ interface that allows users to play a game of euchre with simulated players executing moves via a programmed strategy through object-oriented programming.</li>
+                        <li>Devised and implemented a robot opponent with intelligent strategies to compete either with other bots or with human players.</li>
+                        <li>Utilized polymorphism and abstraction concepts to design the application partitioning the code into a card class, a deck class, a player class, and a euchre game class.</li>
+                    </ul>
+                </div>
+
+                <div class="projects-item" data-project="5">
+                    <h4>Piazza Classifier</h4>
+                    <ul>
+                        <li>Implemented a binary search tree and utilized the map abstract data type to construct a data container.</li>
+                        <li>Developed a program that employs this container to identify new posts and display any pertinent posts associated with them.</li>
+                    </ul>
+                </div>
+
+
+    
+            </div>
+        </div>
+    </section>
+
+    <!--Personal Projects-->
+    <section class="personal-projects" id="personal-projects">
+        <h2 class="heading">Personal <span>Projects</span></h2>
+        <div class="row">
+            <div class="mp-box">
+                <div class="mp-item">
+                    <div>
+                        <p2>The ATM Validator</p2>
+                        <ul>
+                            <li>Designed a program to print checking account balance, transaction type code: (W)ithdraw, (D)eposit, and (R)eport, and transaction amount of a customer account.</li>
+                            <li>Calculated new balance depending on the transaction type that was selected using designed function and printed to a protected file.</li>
+                        </ul>
+                    </div> 
+                </div>
+            
+                <div class="mp-item"> 
+                    <div>
+                        <p2>Words Finder Game</p2>
+                        <ul>
+                            <li>Created a program that reads an eight-by-eight table of letters, fills into a 2-dim array of size eight by eight, the
+                                correct words that need to be found, and finds the correct English words in the table.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="mp-box">
+                <div class="mp-item">
+                    <div>
+                        <p2>Spelling Correction System </p2>
+                        <ul>
+                            <li>Designed a program that reads words from a file and detects four types of errors: Character substitution,
+                                transposition, deletion, and insertion. Then, prints out all the incorrect words with the errors detected.</li>
+                        </ul>
+                    </div>
+                </div>
+              
+                <div class="mp-item">  
+                    <div>
+                        <p2>Videos and Customers Information</p2>
+                        <ul>
+                            <li>Displayed a menu that includes printing a list of all videos' names owned by the Movie Rent Video Store, a list of
+                                all customers, a list of rental information by a video title including the customer information. Depending on the
+                                users input, the program prints the needed information.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <script>
+        // Define the media query for screen width of 1000px and above
+    const mediaQuery = window.matchMedia('(min-width: 1020px)');
+
+    // Function to handle the Intersection Observer and other logic
+    function handleProjectsFunctionality() {
+        const projectImage = document.getElementById('project-image');
+        const projectsItems = document.querySelectorAll('.projects-item');
+        const imageContainer = document.querySelector('.projects-image');
+        
+        // Function to update image brightness dynamically
+        function updateImageOnIntersection(entries) {
+            entries.forEach(entry => {
+                const project = entry.target;
+                const title = project.querySelector('h4');
+                const titleRect = title.getBoundingClientRect();
+                const imageRect = imageContainer.getBoundingClientRect();
+                
+                const buffer = 100; // Buffer zone around the middle of the image
+                const imageMiddle = imageContainer.offsetTop + (imageContainer.offsetHeight / 2); // Center of the image
+                
+                // Calculate distance from image middle
+                const distanceFromImageMiddle = titleRect.top - imageMiddle;
+        
+                // Adjust brightness as the title approaches the middle of the image
+                let brightness = 0.6;
+                if (Math.abs(distanceFromImageMiddle) <= buffer) {
+                    brightness = 1.2; // Full brightness when the title is centered
+                } else if (Math.abs(distanceFromImageMiddle) > buffer && Math.abs(distanceFromImageMiddle) < imageContainer.offsetHeight) {
+                    brightness = 0.6 + (0.6 * (Math.abs(distanceFromImageMiddle) / imageContainer.offsetHeight));
+                }
+        
+                // Apply brightness to the title
+                title.style.filter = `brightness(${brightness})`;
+        
+                // If the project is in view, mark it as active
+                if (entry.isIntersecting) {
+                    project.classList.add('active');
+                    const activeProject = project.getAttribute('data-project');
+                    const newImageSrc = `photos/P${activeProject}.png`;
+                    projectImage.src = newImageSrc;
+                    projectImage.classList.add('visible');
+                } else {
+                    project.classList.remove('active');
+                }
+            });
+        }
+        
+        // Create an IntersectionObserver to watch for when projects come into view
+        const observer = new IntersectionObserver(updateImageOnIntersection, {
+            threshold: 0.75 // When 50% of the project item is in view
+        });
+        
+        // Observe each project item
+        projectsItems.forEach(project => {
+            observer.observe(project);
+        });
+        
+        // Listen to the scroll event on the projects-details container
+        projectsDetails.addEventListener('scroll', updateImageOnScroll);
+        
+        // Run the update function initially to set the correct image
+        updateImageOnScroll();
+    }
+
+    // Function to check if the screen size is suitable for the functionality
+    function checkScreenSize() {
+        if (mediaQuery.matches) {
+            // Run the functionality if the screen width is 1000px or greater
+            handleProjectsFunctionality();
+        } else {
+            // Optionally, you could disable/remove functionality if the screen is smaller than 1000px
+            console.log("Screen is smaller than 1000px, functionality disabled.");
+        }
+    }
+
+    // Listen for changes in the screen width
+    mediaQuery.addEventListener('change', checkScreenSize);
+
+    // Run the check initially to apply the correct functionality based on screen size
+    checkScreenSize();
+
+    const hamMenu = document.querySelector(".ham-menu");
+
+    const offScreenMenu = document.querySelector(".off-screen-menu");
+
+    hamMenu.addEventListener("click", () => {
+    hamMenu.classList.toggle("active");
+    offScreenMenu.classList.toggle("active");
+    });
+    </script>
+</body>
+
+</html>

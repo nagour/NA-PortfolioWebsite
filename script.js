@@ -1,43 +1,43 @@
-var typed = new Typed(".multiple-text", {
-    strings: ["Software Engineer", "Frontend Developer", "Backend Developer"],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
+let navLinks = document.querySelectorAll('header nav a');
 
-})
+// Function to set the active link color to yellow and keep it until another section is clicked
+function setActiveLink() {
+    // Remove active class from all links
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+    });
 
+    // Get the current page's pathname (excluding query parameters or fragments)
+    const currentPage = window.location.pathname.split('/').pop();  // Get the last part of the URL, e.g., "projects.html"
 
-const backToTop = document.querySelector(".back-to-top")
-const observerTarget = document.querySelector("header");
-const observer = new IntersectionObserver((enteries, observer) => {
-    enteries.forEach((entry) => {
-        if(!entry.isIntersecting){
-            backToTop.classList.add("shown");
-            
-        }else{
-            backToTop.classList.remove("shown");
+    navLinks.forEach(link => {
+        const linkHref = link.getAttribute('href');  // Get the href attribute of the link
+        const linkPage = linkHref.split('/').pop(); // Get the last part of the link href (to match against the current page)
+
+        // If the current page matches the link's href, add the 'active' class
+        if (linkPage === currentPage) {
+            link.classList.add('active');
         }
+    });
+}
+
+// Call setActiveLink function when the page is loaded
+document.addEventListener("DOMContentLoaded", setActiveLink);
+
+// Optional: If you have links that redirect to other pages and want to update the active link after a click:
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        // Wait for the page to load and then update the active link
+        setTimeout(setActiveLink, 100);
     });
 });
 
-observer.observe(observerTarget)
+document.addEventListener("DOMContentLoaded", function () {
+    const hamMenu = document.querySelector(".ham-menu");
+    const offScreenMenu = document.querySelector(".off-screen-menu");
 
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
-
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-
-        if(top >= offset && top < offset + height) {
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            });
-        };
-    }) ;
-};
+    hamMenu.addEventListener("click", () => {
+        hamMenu.classList.toggle("active");
+        offScreenMenu.classList.toggle("active");
+    });
+});

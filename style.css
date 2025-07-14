@@ -474,8 +474,7 @@ body{
     display: flex;
     justify-content: center; /* Horizontally centers the content */
     align-items: center;     /* Vertically centers the content */
-    height: 100vh;           /* Full viewport height */
-    padding: 5rem 0;         /* Vertical padding */
+    padding: 2rem 0;         /* Vertical padding */
     padding-left: 8rem;
     background-color: #323946;
     border: 1px solid #ccc;
@@ -484,7 +483,6 @@ body{
     margin: 0 auto;       
     padding-top: 8rem;   
 }
-
 
 .row {
     display: flex;

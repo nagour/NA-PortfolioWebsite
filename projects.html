@@ -31,63 +31,105 @@
           </nav>
     </header>
     
-    
-    
-    <!-- Academic Projects -->
-    <section class="projects" id="projects">
+    <!--Academic Projects-->
+    <section class="academic-projects" id="academic-projects">
         <h2 class="heading">Academic <span>Projects</span></h2>
-        <div class="projects-container">
-            <div class="projects-image">
-                <img id="project-image" src="photos/P1.png" alt="">
+        <div class="row">
+            <div class="mp-box">
+                <div class="mp-item">
+                    <div>
+                        <p2>Insta 485</p2>
+                        <ul>
+                            <li>Implemented a client-side dynamic Instagram clone with React and Flask REST API for posts, likes, and comments using asynchronous JavaScript and real-time UI updates.</li>
+                            <li>Implemented infinite scrolling, dynamic content loading, and double-click to like for a real-time user experience.</li>
+                        </ul>
+                    </div> 
+                </div>
+            
+                <div class="mp-item"> 
+                    <div>
+                        <p2>Multi-threaded Pizza Delivery System</p2>
+                        <ul>
+                            <li>Designed and implemented a concurrent pizza-delivery simulator in C++ supporting D drivers and C customers using custom thread library (CPU, threads, mutexes, cv).</li>
+                            <li>Ensured thread safety, liveness and correctness through synchronization to prevent race conditions and deadlocks.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="mp-box">
+                <div class="mp-item">
+                    <div>
+                        <p2>Mini Google Clone</p2>
+                        <ul>
+                            <li>Developed a scalable Python-based search engine using MapReduce, implementing a segmented inverted index,
+                                integrating TF-IDF and PageRank scoring, and deploying REST API and dynamic search servers.</li>
+                        </ul>
+                    </div>
+                </div>
+              
+                <div class="mp-item">  
+                    <div>
+                        <p2>Image Processing System</p2>
+                        <ul>
+                            <li>Implemented energy-based image resizing in C++ using dynamic programming and optimization over pixel grids.</li>
+                            <li>Computed pixel energy maps and minimum-energy seams, applying foundational computer vision principles.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mp-box">
+                <div class="mp-item">
+                    <div>
+                        <p2>Fakebook Social Network</p2>
+                        <ul>
+                            <li>Implemented full SQL DDL for 15+ interrelated tables with primary/foreign keys, CHECK constraints, triggers, and
+                                sequences; ensured data integrity and supported autograder-tested insertions of valid/invalid records.</li>
+                            <li>Designed a complete relational database schema for a large-scale social media platform (“Fakebook”), including an
+                                ER diagram modeling users, messages, photos/albums, events, friendships, and tagging relationships.</li>
+                        </ul>
+                    </div>
+                </div>
+              
+                <div class="mp-item">  
+                    <div>
+                        <p2>MongoDB & Oracle Project</p2>
+                        <ul>
+                            <li>Imported dataset into MongoDB and implemented seven complex queries using aggregation pipelines, $unwind,
+                                $group, and JavaScript to analyze users, friendships, and city-based groupings.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
-            <div class="projects-details" id="projects-details">
-                <div class="projects-item" data-project="1">
-                    <h4>Insta 485</h4>
-                    <ul>
-                        <li>Developed an Instagram clone with client-side/server-side dynamic pages using React API for front-end, Flask
-                            for back-end, and SQLite for database, supporting features like user sign-in, posts and comments.</li>
-                    </ul>
+            <div class="mp-box">
+                <div class="mp-item">
+                    <div>
+                        <p2>Euchre Game Engine</p2>
+                        <ul>
+                            <li>Designed and implemented a full Euchre game simulator in C++ using object-oriented design, inheritance, and polymorphism.</li>
+                            <li>Applied inheritance and polymorphism to model multiple player strategies (AI vs Human).</li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="projects-item" data-project="2">
-                    <h4>Web Backend</h4>
-                    <ul>
-                        <li>Created a queue that contains items stored in first-in-first-out order: the first item to be added is also the first one to be removed.</li>
-                        <li>Implemented this queue using a linked list that allowed insertion and removal at both ends, allowing items to be added at one end and removed at the other.</li>
-                    </ul>
+              
+                <div class="mp-item">  
+                    <div>
+                        <p2>Videos and Customers Information</p2>
+                        <ul>
+                            <li>Displayed a menu that includes printing a list of all videos' names owned by the Movie Rent Video Store, a list of
+                                all customers, a list of rental information by a video title including the customer information. Depending on the
+                                users input, the program prints the needed information.</li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="projects-item" data-project="3">
-                    <h4>Resize Images</h4>
-                    <ul>
-                        <li>Optimized memory efficiency through strategic pointer usage by developing a smart seam-carving program that dynamically resizes images using mathematical algorithms.</li>
-                    </ul>
-                </div>
-
-                <div class="projects-item" data-project="4">
-                    <h4>Euchre Game</h4>
-                    <ul>
-                        <li>Designed a C++ interface that allows users to play a game of euchre with simulated players executing moves via a programmed strategy through object-oriented programming.</li>
-                        <li>Devised and implemented a robot opponent with intelligent strategies to compete either with other bots or with human players.</li>
-                        <li>Utilized polymorphism and abstraction concepts to design the application partitioning the code into a card class, a deck class, a player class, and a euchre game class.</li>
-                    </ul>
-                </div>
-
-                <div class="projects-item" data-project="5">
-                    <h4>Piazza Classifier</h4>
-                    <ul>
-                        <li>Implemented a binary search tree and utilized the map abstract data type to construct a data container.</li>
-                        <li>Developed a program that employs this container to identify new posts and display any pertinent posts associated with them.</li>
-                    </ul>
-                </div>
-
-
-    
-            </div>
+            </div> 
+        </div>
+            
         </div>
     </section>
 
+    
     <!--Personal Projects-->
     <section class="personal-projects" id="personal-projects">
         <h2 class="heading">Personal <span>Projects</span></h2>

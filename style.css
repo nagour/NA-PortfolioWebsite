@@ -190,10 +190,6 @@ body{
 
 
 @media (max-width: 1200px) {
-    .navbar a {
-        font-size: 1.2rem;
-        margin-left: .5rem;
-    }
     .home-content p{
         font-size: 14px;
         opacity: 0;
@@ -232,6 +228,7 @@ body{
 @media (max-width: 1020px) {
     .navbar a {
         font-size: 1rem;
+        margin-left: .5rem;
     }
     .home-img img {
         margin-top: -4rem;

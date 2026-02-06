@@ -345,16 +345,13 @@ body{
 /*---------------------------------------*/
 /* General body and header styles */
 .about {
-    padding-top: 10rem;
-    padding-left: 10rem;
-    display: flex;
     height: auto;  /* Let the container height adjust based on content */
     width: 80%; /* Set the width to 80% of the parent container */
     margin: 0 auto;
     background-color: #323946;
     border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 3rem;  /* Add padding inside the container */
+    padding-top: 8rem;  /* Add padding inside the container */
 }
 
 /* Content Wrapper */
@@ -474,14 +471,13 @@ body{
     display: flex;
     justify-content: center; /* Horizontally centers the content */
     align-items: center;     /* Vertically centers the content */
-    padding: 2rem 0;         /* Vertical padding */
-    padding-left: 8rem;
+    padding-left: 4rem;
     background-color: #323946;
     border: 1px solid #ccc;
     border-radius: 8px;
     width: 80%;               /* Adjusts the width of the content */
     margin: 0 auto;       
-    padding-top: 5rem;   
+    padding-top: 12rem;   
 }
 
 .row {

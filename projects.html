@@ -34,96 +34,140 @@
     <!--Academic Projects-->
     <section class="academic-projects" id="academic-projects">
         <h2 class="heading">Academic <span>Projects</span></h2>
-            <div class="mp-box">
-                <div class="mp-item">
-                    <div>
-                        <p2>Insta 485</p2>
-                        <ul>
-                            <li>Implemented a client-side dynamic Instagram clone with React and Flask REST API for posts, likes, and comments using asynchronous JavaScript and real-time UI updates.</li>
-                            <li>Implemented infinite scrolling, dynamic content loading, and double-click to like for a real-time user experience.</li>
-                        </ul>
-                    </div> 
-                </div>
-            
-                <div class="mp-item"> 
-                    <div>
-                        <p2>Multi-threaded Pizza Delivery System</p2>
-                        <ul>
-                            <li>Designed and implemented a concurrent pizza-delivery simulator in C++ supporting D drivers and C customers using custom thread library (CPU, threads, mutexes, cv).</li>
-                            <li>Ensured thread safety, liveness and correctness through synchronization to prevent race conditions and deadlocks.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div> 
-
-            <div class="mp-box">
-                <div class="mp-item">
-                    <div>
-                        <p2>Mini Google Clone</p2>
-                        <ul>
-                            <li>Developed a scalable Python-based search engine using MapReduce, implementing a segmented inverted index,
-                                integrating TF-IDF and PageRank scoring, and deploying REST API and dynamic search servers.</li>
-                        </ul>
-                    </div>
-                </div>
-              
-                <div class="mp-item">  
-                    <div>
-                        <p2>Image Processing System</p2>
-                        <ul>
-                            <li>Implemented energy-based image resizing in C++ using dynamic programming and optimization over pixel grids.</li>
-                            <li>Computed pixel energy maps and minimum-energy seams, applying foundational computer vision principles.</li>
-                        </ul>
-                    </div>
+        <div class="project-filter">
+            <a href="#" onclick="setActiveFilter(this, 'python')">Python</a>
+            <a href="#" class="active" onclick="setActiveFilter(this, 'C++')">C++</a>
+            <a href="#" onclick="setActiveFilter(this, 'Java')">Java</a>
+            <a href="#" onclick="setActiveFilter(this, 'SQL')">SQL</a>
+            <a href="#" onclick="setActiveFilter(this, 'JavaScript')">JavaScript</a>
+        </div>
+        <div class="mp-box">
+            <div class="mp-item" data-language="python">
+                <div>
+                    <p2>Insta 485</p2>
+                    <ul>
+                        <li>Implemented a client-side dynamic Instagram clone with React and Flask REST API for posts, likes, and comments using asynchronous JavaScript and real-time UI updates.</li>
+                        <li>Implemented infinite scrolling, dynamic content loading, and double-click to like for a real-time user experience.</li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="mp-item" data-language="python">
+                <div>
+                    <p2>Mini Google Clone</p2>
+                    <ul>
+                        <li>Developed a scalable Python-based search engine using MapReduce, implementing a segmented inverted index,
+                            integrating TF-IDF and PageRank scoring, and deploying REST API and dynamic search servers.</li>
+                    </ul>
                 </div>
             </div>
-            <div class="mp-box">
-                <div class="mp-item">
-                    <div>
-                        <p2>Fakebook Social Network</p2>
-                        <ul>
-                            <li>Implemented full SQL DDL for 15+ interrelated tables with primary/foreign keys, CHECK constraints, triggers, and
-                                sequences; ensured data integrity and supported autograder-tested insertions of valid/invalid records.</li>
-                            <li>Designed a complete relational database schema for a large-scale social media platform (“Fakebook”), including an
-                                ER diagram modeling users, messages, photos/albums, events, friendships, and tagging relationships.</li>
-                        </ul>
-                    </div>
+        </div>
+        <div class="mp-box">
+            <div class="mp-item" data-language="C++">
+                <div>
+                    <p2>Multi-threaded Pizza Delivery System</p2>
+                    <ul>
+                        <li>Designed and implemented a concurrent pizza-delivery simulator in C++ supporting D drivers and C customers using custom thread library (CPU, threads, mutexes, cv).</li>
+                        <li>Ensured thread safety, liveness and correctness through synchronization to prevent race conditions and deadlocks.</li>
+                    </ul>
                 </div>
-              
-                <div class="mp-item">  
-                    <div>
-                        <p2>MongoDB & Oracle Project</p2>
-                        <ul>
-                            <li>Imported dataset into MongoDB and implemented seven complex queries using aggregation pipelines, $unwind,
-                                $group, and JavaScript to analyze users, friendships, and city-based groupings.</li>
-                        </ul>
-                    </div>
+            </div>
+            <div class="mp-item" data-language="C++">  
+                <div>
+                    <p2>Image Processing System</p2>
+                    <ul>
+                        <li>Implemented energy-based image resizing in C++ using dynamic programming and optimization over pixel grids.</li>
+                        <li>Computed pixel energy maps and minimum-energy seams, applying foundational computer vision principles.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mp-box">
+            <div class="mp-item" data-language="C++">
+                <div>
+                    <p2>Euchre Game Engine</p2>
+                    <ul>
+                        <li>Designed and implemented a full Euchre game simulator in C++ using object-oriented design, inheritance, and polymorphism.</li>
+                        <li>Applied inheritance and polymorphism to model multiple player strategies (AI vs Human).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mp-box">
+            <div class="mp-item" data-language="SQL">
+                <div>
+                    <p2>Fakebook Social Network</p2>
+                    <ul>
+                        <li>Implemented full SQL DDL for 15+ interrelated tables with primary/foreign keys, CHECK constraints, triggers, and
+                            sequences; ensured data integrity and supported autograder-tested insertions of valid/invalid records.</li>
+                        <li>Designed a complete relational database schema for a large-scale social media platform (“Fakebook”), including an
+                            ER diagram modeling users, messages, photos/albums, events, friendships, and tagging relationships.</li>
+                    </ul>
+                </div>
+            </div>
+          
+            <div class="mp-item" data-language="SQL">  
+                <div>
+                    <p2>MongoDB & Oracle Project</p2>
+                    <ul>
+                        <li>Imported dataset into MongoDB and implemented seven complex queries using aggregation pipelines, $unwind,
+                            $group, and JavaScript to analyze users, friendships, and city-based groupings.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mp-box">
+            <div class="mp-item" data-language="Java">
+                <div>
+                    <p2>A Sliding Puzzle Solver</p2>
+                    <ul>
+                        <li>Developed a Java-based A* search solver for the sliding puzzle with configurable evaluation strategies and heuristic 
+                            functions (misplaced tiles, Manhattan distance), while measuring runtime performance and search space size to analyze algorithm efficiency.</li>
+                    </ul>
+                </div>
+            </div>
+          
+            <div class="mp-item" data-language="Java">  
+                <div>
+                    <p2>Constraint Satisfaction Puzzle Solver</p2>
+                    <ul>
+                        <li>Developed a Java-based constraint satisfaction solver for a generalized n.Å~n. puzzle using recursion, 
+                            backtracking, and partial solution validation while enforcing row, column, region, odd/even, and blocked-cell constraints.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mp-box">
+            <div class="mp-item" data-language="Java">
+                <div>
+                    <p2>Two-Player Strategy Game AI</p2>
+                    <ul>
+                        <li>Developed a competitive two-player board game AI in Java using the Minimax algorithm with depth 
+                            limiting, Alpha-Beta pruning, and heuristic board evaluation to optimize move selection within strict runtime constraints.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mp-box">
+            <div class="mp-item" data-language="JavaScript">
+                <div>
+                    <p2>Asteroids Game</p2>
+                    <ul>
+                        <li>Built an interactive single-page Asteroids game using HTML, CSS, and JavaScript/jQuery, 
+                            implementing smooth rocket movement, dynamic asteroid spawning, shields, portals, and responsive in-game UI elements.</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="mp-box">
-                <div class="mp-item">
-                    <div>
-                        <p2>Euchre Game Engine</p2>
-                        <ul>
-                            <li>Designed and implemented a full Euchre game simulator in C++ using object-oriented design, inheritance, and polymorphism.</li>
-                            <li>Applied inheritance and polymorphism to model multiple player strategies (AI vs Human).</li>
-                        </ul>
-                    </div>
+            <div class="mp-item" data-language="JavaScript">
+                <div>
+                    <p2>Artist Search Web App (iTunes)</p2>
+                    <ul>
+                        <li>Designed a responsive music search interface using Vue.js and Bootstrap, prioritizing clarity and ease of 
+                            navigation for searching, filtering, and sorting artists.</li>
+                        <li>Implemented user-centric features such as genre filters, search history, and favorites, optimizing workflow and reducing cognitive load during repeated searches.</li>
+                    </ul>
                 </div>
-              
-                <div class="mp-item">  
-                    <div>
-                        <p2>Videos and Customers Information</p2>
-                        <ul>
-                            <li>Displayed a menu that includes printing a list of all videos' names owned by the Movie Rent Video Store, a list of
-                                all customers, a list of rental information by a video title including the customer information. Depending on the
-                                users input, the program prints the needed information.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div> 
-            
+            </div>
         </div>
     </section>
 
@@ -132,8 +176,8 @@
     <section class="personal-projects" id="personal-projects">
         <h2 class="heading">Personal <span>Projects</span></h2>
         <div class="row">
-            <div class="mp-box">
-                <div class="mp-item">
+            <div class="mp-box2">
+                <div class="mp-item2">
                     <div>
                         <p2>The ATM Validator</p2>
                         <ul>
@@ -143,7 +187,7 @@
                     </div> 
                 </div>
             
-                <div class="mp-item"> 
+                <div class="mp-item2"> 
                     <div>
                         <p2>Words Finder Game</p2>
                         <ul>
@@ -154,8 +198,8 @@
                 </div>
             </div> 
 
-            <div class="mp-box">
-                <div class="mp-item">
+            <div class="mp-box2">
+                <div class="mp-item2">
                     <div>
                         <p2>Spelling Correction System </p2>
                         <ul>
@@ -165,7 +209,7 @@
                     </div>
                 </div>
               
-                <div class="mp-item">  
+                <div class="mp-item2">  
                     <div>
                         <p2>Videos and Customers Information</p2>
                         <ul>
@@ -178,97 +222,7 @@
             </div> 
         </div>
     </section>
-    <script>
-        // Define the media query for screen width of 1000px and above
-    const mediaQuery = window.matchMedia('(min-width: 1020px)');
-
-    // Function to handle the Intersection Observer and other logic
-    function handleProjectsFunctionality() {
-        const projectImage = document.getElementById('project-image');
-        const projectsItems = document.querySelectorAll('.projects-item');
-        const imageContainer = document.querySelector('.projects-image');
-        
-        // Function to update image brightness dynamically
-        function updateImageOnIntersection(entries) {
-            entries.forEach(entry => {
-                const project = entry.target;
-                const title = project.querySelector('h4');
-                const titleRect = title.getBoundingClientRect();
-                const imageRect = imageContainer.getBoundingClientRect();
-                
-                const buffer = 100; // Buffer zone around the middle of the image
-                const imageMiddle = imageContainer.offsetTop + (imageContainer.offsetHeight / 2); // Center of the image
-                
-                // Calculate distance from image middle
-                const distanceFromImageMiddle = titleRect.top - imageMiddle;
-        
-                // Adjust brightness as the title approaches the middle of the image
-                let brightness = 0.6;
-                if (Math.abs(distanceFromImageMiddle) <= buffer) {
-                    brightness = 1.2; // Full brightness when the title is centered
-                } else if (Math.abs(distanceFromImageMiddle) > buffer && Math.abs(distanceFromImageMiddle) < imageContainer.offsetHeight) {
-                    brightness = 0.6 + (0.6 * (Math.abs(distanceFromImageMiddle) / imageContainer.offsetHeight));
-                }
-        
-                // Apply brightness to the title
-                title.style.filter = `brightness(${brightness})`;
-        
-                // If the project is in view, mark it as active
-                if (entry.isIntersecting) {
-                    project.classList.add('active');
-                    const activeProject = project.getAttribute('data-project');
-                    const newImageSrc = `photos/P${activeProject}.png`;
-                    projectImage.src = newImageSrc;
-                    projectImage.classList.add('visible');
-                } else {
-                    project.classList.remove('active');
-                }
-            });
-        }
-        
-        // Create an IntersectionObserver to watch for when projects come into view
-        const observer = new IntersectionObserver(updateImageOnIntersection, {
-            threshold: 0.75 // When 50% of the project item is in view
-        });
-        
-        // Observe each project item
-        projectsItems.forEach(project => {
-            observer.observe(project);
-        });
-        
-        // Listen to the scroll event on the projects-details container
-        projectsDetails.addEventListener('scroll', updateImageOnScroll);
-        
-        // Run the update function initially to set the correct image
-        updateImageOnScroll();
-    }
-
-    // Function to check if the screen size is suitable for the functionality
-    function checkScreenSize() {
-        if (mediaQuery.matches) {
-            // Run the functionality if the screen width is 1000px or greater
-            handleProjectsFunctionality();
-        } else {
-            // Optionally, you could disable/remove functionality if the screen is smaller than 1000px
-            console.log("Screen is smaller than 1000px, functionality disabled.");
-        }
-    }
-
-    // Listen for changes in the screen width
-    mediaQuery.addEventListener('change', checkScreenSize);
-
-    // Run the check initially to apply the correct functionality based on screen size
-    checkScreenSize();
-
-    const hamMenu = document.querySelector(".ham-menu");
-
-    const offScreenMenu = document.querySelector(".off-screen-menu");
-
-    hamMenu.addEventListener("click", () => {
-    hamMenu.classList.toggle("active");
-    offScreenMenu.classList.toggle("active");
-    });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

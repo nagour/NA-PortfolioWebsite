@@ -605,6 +605,39 @@ body{
 }
 /*-----------------Academic Project----------------*/
 
+.project-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.project-filter a {
+    text-decoration: none;
+    color: #fff;
+    background: #1f2937;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.project-filter a:hover {
+    background: rgb(133, 145, 1);
+    transform: translateY(-3px);
+    border-color: rgb(227, 248, 0);
+    box-shadow: 0 8px 20px rgb(227, 248, 0);
+}
+
+.project-filter a.active {
+    background: rgb(133, 145, 1);
+    border-color: rgb(227, 248, 0);
+}
+
 .academic-projects{
     /* Vertically centers the content */
     padding-left: 2rem;
@@ -650,6 +683,17 @@ body{
 }
 
 .mp-item {
+    flex: 1.2; /* Makes the items evenly sized */
+    padding: 35px;
+    box-shadow: 0 2px 2px #323946; /* Optional: Adds shadow */
+}
+
+.mp-box2 {
+    display: flex; /* Enables Flexbox */
+    justify-content: space-between; /* Adds space between the items */
+}
+
+.mp-item2 {
     flex: 1.2; /* Makes the items evenly sized */
     padding: 35px;
     box-shadow: 0 2px 2px #323946; /* Optional: Adds shadow */

@@ -21,6 +21,36 @@ function setActiveLink() {
     });
 }
 
+window.addEventListener("DOMContentLoaded", () => {
+    const firstFilter = document.querySelector(".project-filter a");
+    setActiveFilter(firstFilter, "python");
+});
+
+function setActiveFilter(element, language) {
+    document.querySelectorAll(".project-filter a").forEach(link => {
+        link.classList.remove("active");
+    });
+
+    element.classList.add("active");
+    filterProjects(language);
+}
+
+function filterProjects(language) {
+    const projects = document.querySelectorAll(".mp-item");
+
+    projects.forEach(project => {
+
+        const langs = project.dataset.language;
+        if (langs==language) {
+            project.style.display = "block";
+        } else {
+            project.style.display = "none";
+        }
+
+    });
+}
+
+
 // Call setActiveLink function when the page is loaded
 document.addEventListener("DOMContentLoaded", setActiveLink);
 
